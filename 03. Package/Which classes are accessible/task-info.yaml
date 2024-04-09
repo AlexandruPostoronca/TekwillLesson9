@@ -1,0 +1,37 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: org.demo.mypackage2.D
+    is_correct: false
+  - text: java.util.Scanner
+    is_correct: false
+  - text: org.demo.B
+    is_correct: true
+  - text: org.demo.A
+    is_correct: true
+  - text: org.demo.mypackage1.C
+    is_correct: false
+  - text: java.lang.String
+    is_correct: true
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+          public static void main(String[] args) {
+              // Write your solution here
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 21:43:00 UTC"
+record: -1
+selected_options:
+  - 2
+  - 3
+  - 5
+custom_name: Which classes are accessible
+local_check: true

@@ -1,0 +1,118 @@
+type: edu
+custom_name: Army
+files:
+  - name: src/Army.java
+    visible: true
+    text: |-
+      class Army {
+      
+          public static void createArmy() {
+              // Create all objects here
+          }
+      
+          // Don't change the code below
+          public static void main(String[] args) {
+              createArmy();
+              System.out.println(Unit.countUnit);
+              System.out.println(Knight.countKnight);
+              System.out.println(General.countGeneral);
+              System.out.println(Doctor.countDoctor);
+          }
+      
+      }
+    learner_created: false
+  - name: test/MainTest.java
+    visible: false
+    text: |-
+      import org.junit.After;
+      import org.junit.Before;
+      import org.junit.Test;
+      
+      import java.io.ByteArrayOutputStream;
+      import java.io.PrintStream;
+      
+      import static org.junit.Assert.assertEquals;
+      
+      public class MainTest {
+          private final PrintStream standardOut = System.out;
+          private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
+      
+          @Before
+          public void setUp() {
+              System.setOut(new PrintStream(outputStreamCaptor));
+          }
+      
+          @After
+          public void tearDown() {
+              System.setOut(standardOut);
+          }
+      
+          @Test
+          public void simpleTest() {
+              Army.main(new String[0]);
+              String expectedOutput = String.join(System.lineSeparator(), "5", "3", "1", "1");
+              assertEquals(expectedOutput, outputStreamCaptor.toString().trim());
+          }
+      }
+    learner_created: false
+  - name: src/Unit.java
+    visible: true
+    text: |
+      public class Unit {
+          static String nameUnit;
+          static int countUnit;
+      
+          public Unit(String name) {
+              countUnit++;
+              nameUnit = name;
+      
+          }
+      }
+    learner_created: false
+  - name: src/Knight.java
+    visible: true
+    text: |-
+      public class Knight {
+          static String nameKnight;
+          static int countKnight;
+      
+          public Knight(String name) {
+              countKnight++;
+              nameKnight = name;
+      
+          }
+      }
+    learner_created: false
+  - name: src/General.java
+    visible: true
+    text: |
+      public class General {
+          static String nameGeneral;
+          static int countGeneral;
+      
+          public General(String name) {
+              countGeneral++;
+              nameGeneral = name;
+      
+          }
+      }
+    learner_created: false
+  - name: src/Doctor.java
+    visible: true
+    text: |-
+      public class Doctor {
+          static String nameDoctor;
+          static int countDoctor;
+      
+          public Doctor(String name) {
+              countDoctor++;
+              nameDoctor = name;
+      
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 04 Apr 2024 06:43:04 UTC"
+record: -1

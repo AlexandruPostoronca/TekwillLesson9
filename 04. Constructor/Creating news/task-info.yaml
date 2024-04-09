@@ -1,0 +1,32 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: "New news = new News(\"A title\", \"A text\", new String[]{\"PROGRAMMING\"\
+    , \"JAVA\"});"
+    is_correct: false
+  - text: "News news = new News(\"A title\", \"A text\");"
+    is_correct: true
+  - text: New news = new News("A title");
+    is_correct: false
+  - text: News news = new News();
+    is_correct: false
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 22:08:39 UTC"
+record: -1
+selected_options:
+  - 1
+custom_name: Creating news
+local_check: true

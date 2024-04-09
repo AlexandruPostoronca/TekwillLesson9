@@ -1,0 +1,37 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: car brand
+    is_correct: true
+  - text: drive
+    is_correct: false
+  - text: price
+    is_correct: true
+  - text: look at the map
+    is_correct: false
+  - text: passenger capacity
+    is_correct: true
+  - text: road signs
+    is_correct: false
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 19:38:57 UTC"
+record: -1
+selected_options:
+  - 0
+  - 2
+  - 4
+custom_name: Object attributes
+local_check: true

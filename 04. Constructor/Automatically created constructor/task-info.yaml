@@ -1,0 +1,32 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: parameterized constructor
+    is_correct: false
+  - text: copy constructor
+    is_correct: false
+  - text: default no-arg constructor
+    is_correct: true
+  - text: private constructor
+    is_correct: false
+  - text: generic constructor
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 22:02:30 UTC"
+record: -1
+selected_options:
+  - 2
+custom_name: Automatically created constructor
+local_check: true

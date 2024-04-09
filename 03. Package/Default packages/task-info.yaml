@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: Classes inside the default package are invisible to each other.
+    is_correct: false
+  - text: Import statement can't import a class from a named package into a java file
+      inside the default package.
+    is_correct: false
+  - text: Import statement can't import a class from the default package into a java
+      file inside a named package.
+    is_correct: true
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 21:39:18 UTC"
+record: -1
+selected_options:
+  - 2
+custom_name: Default packages
+local_check: true

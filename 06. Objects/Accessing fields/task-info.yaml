@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: =
+    is_correct: false
+  - text: .
+    is_correct: true
+  - text: The instance of operator
+    is_correct: false
+  - text: ->
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 04 Apr 2024 06:41:38 UTC"
+record: -1
+selected_options:
+  - 1
+custom_name: Accessing fields
+local_check: true

@@ -1,0 +1,32 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: Fields store the state of an object.
+    is_correct: true
+  - text: An object always has fields.
+    is_correct: false
+  - text: "As a rule, the internal state of an object is open for the whole world."
+    is_correct: false
+  - text: A class describes a common structure for a set of objects.
+    is_correct: true
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 19:59:25 UTC"
+record: -1
+selected_options:
+  - 0
+  - 3
+custom_name: Statements
+local_check: true

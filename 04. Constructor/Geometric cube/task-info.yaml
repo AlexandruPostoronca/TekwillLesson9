@@ -1,0 +1,111 @@
+type: edu
+custom_name: Geometric cube
+files:
+  - name: src/Main.java
+    visible: true
+    text: |+
+      import java.util.Scanner;
+      
+      public class Main {
+      
+          public static void main(String[] args) {
+      
+              Scanner scanner = new Scanner(System.in);
+      
+              int width = scanner.nextInt();
+              int height = scanner.nextInt();
+              int length = scanner.nextInt();
+      
+              // creating an instance
+      
+              System.out.println(cuboid);
+          }
+      }
+    
+    learner_created: false
+  - name: test/MainTest.java
+    visible: false
+    text: |-
+      import org.junit.After;
+      import org.junit.Before;
+      import org.junit.Test;
+      
+      import java.io.ByteArrayInputStream;
+      import java.io.ByteArrayOutputStream;
+      import java.io.InputStream;
+      import java.io.PrintStream;
+      
+      import static org.junit.Assert.assertEquals;
+      
+      public class MainTest {
+          private final PrintStream standardOut = System.out;
+          private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
+      
+          @Before
+          public void setUp() {
+              System.setOut(new PrintStream(outputStreamCaptor));
+          }
+      
+          @After
+          public void tearDown() {
+              System.setOut(standardOut);
+          }
+      
+          @Test
+          public void returnsCorrectCuboidStringForValidInput() {
+              simpleTest("Cuboid(w=2, h=3, l=4)", "2 3 4");
+          }
+      
+          @Test
+          public void returnsCorrectCuboidStringForZeroWidth() {
+              simpleTest("Cuboid(w=0, h=5, l=6)", "0 5 6");
+          }
+      
+          @Test
+          public void returnsCorrectCuboidStringForNegativeInput() {
+              simpleTest("Cuboid(w=-2, h=3, l=4)", "-2 3 4");
+          }
+      
+          @Test
+          public void returnsCorrectCuboidStringForMaxInput() {
+              simpleTest("Cuboid(w=2147483647, h=2147483647, l=2147483647)", "2147483647 2147483647 2147483647");
+          }
+      
+          private void simpleTest(String expectedOutput, String input) {
+              InputStream inputStream = new ByteArrayInputStream(input.getBytes());
+              System.setIn(inputStream);
+      
+              Main.main(new String[0]);
+      
+              assertEquals(expectedOutput, outputStreamCaptor.toString().trim());
+          }
+      }
+    learner_created: false
+  - name: src/GeometricCuboid.java
+    visible: true
+    text: |-
+      public class GeometricCuboid {
+          private int width;
+          private int height;
+          private int length;
+      
+          public GeometricCuboid(int width, int height, int length) {
+              this.width = width;
+              this.height = height;
+              this.length = length;
+          }
+      
+          @Override
+          public String toString() {
+              return "Cuboid(" +
+                     "w=" + width +
+                     ", h=" + height +
+                     ", l=" + length + ')';
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 22:05:47 UTC"
+record: -1

@@ -1,0 +1,32 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: package
+    is_correct: false
+  - text: dependency
+    is_correct: false
+  - text: export
+    is_correct: false
+  - text: include
+    is_correct: false
+  - text: import
+    is_correct: true
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 20:43:02 UTC"
+record: -1
+selected_options:
+  - 4
+custom_name: A keyword for importing a class
+local_check: true

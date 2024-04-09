@@ -1,0 +1,132 @@
+type: edu
+custom_name: Account and its owner
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      import java.util.Optional;
+      
+      public class Main {
+      
+      
+          public static void main(String[] args) {
+      
+              // create an instance of Account here
+      
+              // pass it into process method
+          }
+      
+          public static void process(Account account) {
+              try {
+                  final Optional<User> owner = Optional.ofNullable(account.getOwner());
+      
+                  System.out.println(account.getCode());
+                  System.out.println(account.getBalance());
+      
+                  owner.ifPresent(o -> {
+                      System.out.println(o.getLogin());
+                      System.out.println(o.getFirstName());
+                      System.out.println(o.getLastName());
+                  });
+      
+              } catch (Exception e) {
+                  System.out.println("Something wrong...");
+              }
+          }
+      }
+    learner_created: false
+  - name: test/MainTest.java
+    visible: false
+    text: |-
+      import org.junit.After;
+      import org.junit.Before;
+      import org.junit.Test;
+      
+      import java.io.ByteArrayOutputStream;
+      import java.io.PrintStream;
+      
+      import static org.junit.Assert.assertEquals;
+      
+      public class MainTest {
+          private final PrintStream standardOut = System.out;
+          private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
+      
+          @Before
+          public void setUp() {
+              System.setOut(new PrintStream(outputStreamCaptor));
+          }
+      
+          @After
+          public void tearDown() {
+              System.setOut(standardOut);
+          }
+      
+          @Test
+          public void simpleTest() {
+              Main.main(new String[0]);
+              String expectedOutput = String.join(System.lineSeparator(), "123456", "1000", "demo-user", "Alexander", "Schmidt");
+              assertEquals(expectedOutput, outputStreamCaptor.toString().trim());
+          }
+      }
+    learner_created: false
+  - name: src/Account.java
+    visible: true
+    text: |-
+      public class Account {
+      
+          private final String code;
+          private final long balance;
+          private final User owner;
+      
+          public Account(String code, long balance, User owner) {
+              this.code = code;
+              this.balance = balance;
+              this.owner = owner;
+          }
+      
+          public String getCode() {
+              return code;
+          }
+      
+          public long getBalance() {
+              return balance;
+          }
+      
+          public User getOwner() {
+              return owner;
+          }
+      }
+    learner_created: false
+  - name: src/User.java
+    visible: true
+    text: |-
+      public class User {
+      
+          private final String login;
+          private final String firstName;
+          private final String lastName;
+      
+          public User(String login, String firstName, String lastName) {
+              this.login = login;
+              this.firstName = firstName;
+              this.lastName = lastName;
+          }
+      
+          public String getLogin() {
+              return login;
+          }
+      
+          public String getFirstName() {
+              return firstName;
+          }
+      
+          public String getLastName() {
+              return lastName;
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 22:12:47 UTC"
+record: -1

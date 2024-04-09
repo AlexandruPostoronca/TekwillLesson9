@@ -1,0 +1,35 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: It's impossible to create an instance of a class that has no explicit constructor.
+    is_correct: false
+  - text: Constructors can be considered as special types of methods.
+    is_correct: true
+  - text: A constructor must have some parameters.
+    is_correct: false
+  - text: Constructor must not have an explicit return type.
+    is_correct: true
+  - text: Constructor name must be the same as its class name.
+    is_correct: true
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 22:17:12 UTC"
+record: -1
+selected_options:
+  - 1
+  - 3
+  - 4
+custom_name: Constructor definition
+local_check: true

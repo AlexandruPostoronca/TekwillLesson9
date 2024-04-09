@@ -1,0 +1,23 @@
+title: 09. Classes and Objects
+language: English
+summary: |-
+  This is an introductory Java Classes and Objects course.
+    - 01. Introduction to OOP
+    - 02. Defining classes
+    - 03. Package
+    - 04. Constructor
+    - 05. Multiple constructors
+    - 06. Objects
+programming_language: Java
+content:
+  - 01. Introduction to OOP
+  - 02. Defining classes
+  - 03. Package
+  - 04. Constructor
+  - 05. Multiple constructors
+  - 06. Objects
+mode: Study
+environment_settings:
+  jvm_language_level: JDK_17
+vendor:
+  name: Alexandru Umaneț

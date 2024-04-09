@@ -1,0 +1,32 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: org.aumanet.java.DemoClass.class
+    is_correct: false
+  - text: DemoClass
+    is_correct: false
+  - text: java.org.aumanet.DemoClass
+    is_correct: false
+  - text: org.aumanet.java.DemoClass
+    is_correct: true
+  - text: aumanet.java.DemoClass
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 20:43:32 UTC"
+record: -1
+selected_options:
+  - 3
+custom_name: The full name of a class
+local_check: true

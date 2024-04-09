@@ -1,0 +1,40 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "val = 50, str = \"default\""
+    is_correct: false
+  - text: "val = 50, str = \"some-value\""
+    is_correct: true
+  - text: "val = 50, str = \"another-value\""
+    is_correct: false
+  - text: "val = 300, str = \"default\""
+    is_correct: false
+  - text: "val = 300, str = \"some-value\""
+    is_correct: false
+  - text: "val = 100, str = \"some-value\""
+    is_correct: false
+  - text: "val = 100, str = \"another-value\""
+    is_correct: false
+  - text: "val = 300, str = \"another-value\""
+    is_correct: false
+  - text: "val = 100, str = \"default\""
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 04 Apr 2024 06:41:25 UTC"
+record: -1
+selected_options:
+  - 1
+custom_name: Entanglement
+local_check: true

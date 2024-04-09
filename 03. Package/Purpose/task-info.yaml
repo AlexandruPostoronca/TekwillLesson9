@@ -1,0 +1,35 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: to group classes
+    is_correct: true
+  - text: to prevent the conflict of class names
+    is_correct: true
+  - text: to store data as a database
+    is_correct: false
+  - text: to store variables
+    is_correct: false
+  - text: to control access of classes and fields (together with access modifiers)
+    is_correct: true
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 20:44:29 UTC"
+record: -1
+selected_options:
+  - 0
+  - 1
+  - 4
+custom_name: Purpose
+local_check: true

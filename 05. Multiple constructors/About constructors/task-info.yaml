@@ -1,0 +1,35 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: "It's possible to define several constructors with the same number, types,\
+    \ and order of parameters."
+    is_correct: false
+  - text: "If a class has multiple constructors, an instance of the class can be created\
+    \ using only the no-arg constructor."
+    is_correct: false
+  - text: The keyword this with parenthesis allows programmers to invoke a constructor
+      from another one.
+    is_correct: true
+  - text: It's possible to define as many constructors as needed.
+    is_correct: true
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 04 Apr 2024 06:37:37 UTC"
+record: -1
+selected_options:
+  - 2
+  - 3
+custom_name: About constructors
+local_check: true

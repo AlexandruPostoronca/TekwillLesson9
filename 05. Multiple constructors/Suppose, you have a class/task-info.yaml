@@ -1,0 +1,34 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: It can be placed anywhere in the body of the second constructor.
+    is_correct: false
+  - text: It must be the last statement in the body of the first constructor.
+    is_correct: false
+  - text: It must be the last statement in the body of the second constructor.
+    is_correct: false
+  - text: It must be the first statement in the body of the second constructor.
+    is_correct: true
+  - text: It can be placed anywhere in the body of the first constructor.
+    is_correct: false
+  - text: It must be the first statement in the body of the first constructor.
+    is_correct: false
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 04 Apr 2024 06:39:37 UTC"
+record: -1
+selected_options:
+  - 3
+custom_name: "Suppose, you have a class"
+local_check: true

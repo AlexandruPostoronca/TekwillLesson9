@@ -1,0 +1,30 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: "An object may have characteristics: fields and methods."
+    is_correct: false
+  - text: An object may have no methods at all
+    is_correct: false
+  - text: Objects interact with each other through invoking methods.
+    is_correct: false
+  - text: The state of an object is represented by its methods.
+    is_correct: true
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 19:38:05 UTC"
+record: -1
+selected_options:
+  - 3
+custom_name: Methods
+local_check: true

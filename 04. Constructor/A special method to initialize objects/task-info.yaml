@@ -1,0 +1,32 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: Finalizer
+    is_correct: false
+  - text: Preparator
+    is_correct: false
+  - text: Getter
+    is_correct: false
+  - text: Destructor
+    is_correct: false
+  - text: Constructor
+    is_correct: true
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 22:02:37 UTC"
+record: -1
+selected_options:
+  - 4
+custom_name: A special method to initialize objects
+local_check: true

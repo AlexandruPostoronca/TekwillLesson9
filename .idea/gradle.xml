@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="delegatedBuild" value="false" />
+        <option name="distributionType" value="WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/01. Introduction to OOP/A state and behaviour" />
+            <option value="$PROJECT_DIR$/01. Introduction to OOP/Basic principles" />
+            <option value="$PROJECT_DIR$/01. Introduction to OOP/Interacting objects" />
+            <option value="$PROJECT_DIR$/01. Introduction to OOP/Methods" />
+            <option value="$PROJECT_DIR$/01. Introduction to OOP/Object attributes" />
+            <option value="$PROJECT_DIR$/01. Introduction to OOP/Object methods" />
+            <option value="$PROJECT_DIR$/01. Introduction to OOP/Objects and classes" />
+            <option value="$PROJECT_DIR$/01. Introduction to OOP/Statements" />
+            <option value="$PROJECT_DIR$/01. Introduction to OOP/The units of an object-oriented program" />
+            <option value="$PROJECT_DIR$/01. Introduction to OOP/Theory" />
+            <option value="$PROJECT_DIR$/01. Introduction to OOP/What is a blueprint" />
+            <option value="$PROJECT_DIR$/01. Introduction to OOP/What is the behavior of an object" />
+            <option value="$PROJECT_DIR$/01. Introduction to OOP/Where the state of an object is stored" />
+            <option value="$PROJECT_DIR$/02. Defining classes/A class with a single integer field" />
+            <option value="$PROJECT_DIR$/02. Defining classes/A keyword for creating objects" />
+            <option value="$PROJECT_DIR$/02. Defining classes/Accounts" />
+            <option value="$PROJECT_DIR$/02. Defining classes/Books" />
+            <option value="$PROJECT_DIR$/02. Defining classes/Complex numbers" />
+            <option value="$PROJECT_DIR$/02. Defining classes/Correct fields" />
+            <option value="$PROJECT_DIR$/02. Defining classes/Inner boxes" />
+            <option value="$PROJECT_DIR$/02. Defining classes/Points" />
+            <option value="$PROJECT_DIR$/02. Defining classes/Points on the 2D plane" />
+            <option value="$PROJECT_DIR$/02. Defining classes/Representing time as a class" />
+            <option value="$PROJECT_DIR$/02. Defining classes/The keyword" />
+            <option value="$PROJECT_DIR$/02. Defining classes/Theory" />
+            <option value="$PROJECT_DIR$/03. Package/A keyword for importing a class" />
+            <option value="$PROJECT_DIR$/03. Package/Accessible packages" />
+            <option value="$PROJECT_DIR$/03. Package/Binary search" />
+            <option value="$PROJECT_DIR$/03. Package/Class hierarchy" />
+            <option value="$PROJECT_DIR$/03. Package/Correct packages" />
+            <option value="$PROJECT_DIR$/03. Package/Creating instances" />
+            <option value="$PROJECT_DIR$/03. Package/Default packages" />
+            <option value="$PROJECT_DIR$/03. Package/Getting input" />
+            <option value="$PROJECT_DIR$/03. Package/Package features" />
+            <option value="$PROJECT_DIR$/03. Package/Purpose" />
+            <option value="$PROJECT_DIR$/03. Package/Required input" />
+            <option value="$PROJECT_DIR$/03. Package/Short names" />
+            <option value="$PROJECT_DIR$/03. Package/Sorting arrays" />
+            <option value="$PROJECT_DIR$/03. Package/The default import" />
+            <option value="$PROJECT_DIR$/03. Package/The full name of a class" />
+            <option value="$PROJECT_DIR$/03. Package/Theory" />
+            <option value="$PROJECT_DIR$/03. Package/Which classes are accessible" />
+            <option value="$PROJECT_DIR$/04. Constructor/A required part of a class" />
+            <option value="$PROJECT_DIR$/04. Constructor/A special method to initialize objects" />
+            <option value="$PROJECT_DIR$/04. Constructor/Account" />
+            <option value="$PROJECT_DIR$/04. Constructor/Account and its owner" />
+            <option value="$PROJECT_DIR$/04. Constructor/Automatically created constructor" />
+            <option value="$PROJECT_DIR$/04. Constructor/Automatically generated constructor" />
+            <option value="$PROJECT_DIR$/04. Constructor/Book" />
+            <option value="$PROJECT_DIR$/04. Constructor/Characterize the constructors" />
+            <option value="$PROJECT_DIR$/04. Constructor/Complex numbers" />
+            <option value="$PROJECT_DIR$/04. Constructor/Constructor definition" />
+            <option value="$PROJECT_DIR$/04. Constructor/Cookie" />
+            <option value="$PROJECT_DIR$/04. Constructor/Creating news" />
+            <option value="$PROJECT_DIR$/04. Constructor/Default constructor" />
+            <option value="$PROJECT_DIR$/04. Constructor/Geometric cube" />
+            <option value="$PROJECT_DIR$/04. Constructor/How to write a constructor" />
+            <option value="$PROJECT_DIR$/04. Constructor/Theory" />
+            <option value="$PROJECT_DIR$/04. Constructor/User" />
+            <option value="$PROJECT_DIR$/05. Multiple constructors/About constructors" />
+            <option value="$PROJECT_DIR$/05. Multiple constructors/Class instantiation" />
+            <option value="$PROJECT_DIR$/05. Multiple constructors/Employee" />
+            <option value="$PROJECT_DIR$/05. Multiple constructors/Entanglement" />
+            <option value="$PROJECT_DIR$/05. Multiple constructors/Movie" />
+            <option value="$PROJECT_DIR$/05. Multiple constructors/Phone" />
+            <option value="$PROJECT_DIR$/05. Multiple constructors/Suppose, you have a class" />
+            <option value="$PROJECT_DIR$/05. Multiple constructors/The Int class" />
+            <option value="$PROJECT_DIR$/05. Multiple constructors/Theory" />
+            <option value="$PROJECT_DIR$/05. Multiple constructors/Time" />
+            <option value="$PROJECT_DIR$/06. Objects/Accessing fields" />
+            <option value="$PROJECT_DIR$/06. Objects/Army" />
+            <option value="$PROJECT_DIR$/06. Objects/Change identities" />
+            <option value="$PROJECT_DIR$/06. Objects/Find reference types" />
+            <option value="$PROJECT_DIR$/06. Objects/Immutability" />
+            <option value="$PROJECT_DIR$/06. Objects/Null or not" />
+            <option value="$PROJECT_DIR$/06. Objects/Theory" />
+            <option value="$PROJECT_DIR$/06. Objects/What is my age" />
+            <option value="$PROJECT_DIR$/06. Objects/What is the value of a field" />
+            <option value="$PROJECT_DIR$/util" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

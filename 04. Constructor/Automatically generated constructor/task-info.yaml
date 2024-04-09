@@ -1,0 +1,32 @@
+type: choice
+is_multiple_choice: false
+options:
+  - text: a constructor taking header as the parameter
+    is_correct: false
+  - text: "two constructors: the first one takes header, the second one takes body"
+    is_correct: false
+  - text: a constructor taking two parameters (header and body)
+    is_correct: false
+  - text: there is no automatically generated constructor
+    is_correct: false
+  - text: a no-argument constructor
+    is_correct: true
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 22:02:46 UTC"
+record: -1
+selected_options:
+  - 4
+custom_name: Automatically generated constructor
+local_check: true

@@ -1,0 +1,32 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: "The following statement creates an object of the class: Point3D p = new Point3D();"
+    is_correct: true
+  - text: This is an incorrect class definition.
+    is_correct: false
+  - text: The values of the fields are always the same for all objects of this class.
+    is_correct: false
+  - text: The class has three fields of the same type.
+    is_correct: true
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 20:42:40 UTC"
+record: -1
+selected_options:
+  - 0
+  - 3
+custom_name: Points
+local_check: true

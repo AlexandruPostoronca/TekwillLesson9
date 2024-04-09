@@ -1,0 +1,33 @@
+type: choice
+is_multiple_choice: true
+options:
+  - text: A new object is created by invoking a constructor.
+    is_correct: true
+  - text: Every class has a constructor.
+    is_correct: true
+  - text: "If the programmer does not provide a constructor for a class, the code cannot\
+    \ compile."
+    is_correct: false
+  - text: A constructor cannot contain a body.
+    is_correct: false
+quiz_header: 'Select all the correct answers:'
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      public class Main {
+         public static void main(String[] args) {
+            // Write your solution here
+         }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 22:02:55 UTC"
+record: -1
+selected_options:
+  - 0
+  - 1
+custom_name: Characterize the constructors
+local_check: true

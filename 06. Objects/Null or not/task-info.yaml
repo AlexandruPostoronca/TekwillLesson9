@@ -1,0 +1,88 @@
+type: edu
+custom_name: Null or not
+files:
+  - name: src/Main.java
+    visible: true
+    text: |-
+      // Do not change the code below
+      import java.util.Scanner;
+      
+      
+      public class Main {
+          public static void main(String[] args) {
+              Solution solution = new Solution();
+              Scanner scanner = new Scanner(System.in);
+              while (scanner.hasNextLine()) {
+                  Object obj = "null".equals(scanner.nextLine()) ? null : new Object();
+                  solution.printIsNull(obj);
+              }
+          }
+      }
+    learner_created: false
+  - name: src/Solution.java
+    visible: true
+    text: |-
+      public class Solution {
+          public void printIsNull(Object o) {
+              // write your code here
+          }
+      }
+    learner_created: false
+  - name: test/MainTest.java
+    visible: false
+    text: |-
+      import org.junit.After;
+      import org.junit.Before;
+      import org.junit.Test;
+      
+      import java.io.ByteArrayInputStream;
+      import java.io.ByteArrayOutputStream;
+      import java.io.InputStream;
+      import java.io.PrintStream;
+      
+      import static org.junit.Assert.assertEquals;
+      
+      public class MainTest {
+          private final PrintStream standardOut = System.out;
+          private final ByteArrayOutputStream outputStreamCaptor = new ByteArrayOutputStream();
+      
+          @Before
+          public void setUp() {
+              System.setOut(new PrintStream(outputStreamCaptor));
+          }
+      
+          @After
+          public void tearDown() {
+              System.setOut(standardOut);
+          }
+      
+          @Test
+          public void testNull() {
+              simpleTest("It's null", "null");
+          }
+      
+          @Test
+          public void testNotNull() {
+              simpleTest("It's an object", "notNull");
+          }
+      
+          @Test
+          public void testEmpty() {
+              simpleTest("", "");
+          }
+      
+          private void simpleTest(String expectedOutput, String input) {
+              InputStream inputStream = new ByteArrayInputStream(input.getBytes());
+              System.setIn(inputStream);
+      
+              Main.main(new String[0]);
+      
+              assertEquals(expectedOutput, outputStreamCaptor.toString().trim());
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 04 Apr 2024 08:24:19 UTC"
+record: -1

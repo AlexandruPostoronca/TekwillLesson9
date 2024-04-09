@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/06. Objects.iml" filepath="$PROJECT_DIR$/.idea/06. Objects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Accessing fields/Accessing fields.iml" filepath="$PROJECT_DIR$/Accessing fields/Accessing fields.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Army/Army.iml" filepath="$PROJECT_DIR$/Army/Army.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Change identities/Change identities.iml" filepath="$PROJECT_DIR$/Change identities/Change identities.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Find reference types/Find reference types.iml" filepath="$PROJECT_DIR$/Find reference types/Find reference types.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Immutability/Immutability.iml" filepath="$PROJECT_DIR$/Immutability/Immutability.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Null or not/Null or not.iml" filepath="$PROJECT_DIR$/Null or not/Null or not.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Theory/Theory.iml" filepath="$PROJECT_DIR$/Theory/Theory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/What is my age/What is my age.iml" filepath="$PROJECT_DIR$/What is my age/What is my age.iml" />
+      <module fileurl="file://$PROJECT_DIR$/What is the value of a field/What is the value of a field.iml" filepath="$PROJECT_DIR$/What is the value of a field/What is the value of a field.iml" />
+    </modules>
+  </component>
+</project>

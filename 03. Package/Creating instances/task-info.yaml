@@ -1,0 +1,55 @@
+type: edu
+custom_name: Creating instances
+files:
+  - name: src/BigIntegerConverter.java
+    visible: true
+    text: |-
+      public class BigIntegerConverter {
+      
+          /**
+           * @param number string representing the number
+           * @return BigInteger instance
+           */
+          public static Number getBigInteger(String number) {
+              return // create BigInteger instance here
+          }
+      }
+    learner_created: false
+  - name: test/BigIntegerConverterTest.java
+    visible: false
+    text: |-
+      import org.junit.Test;
+      
+      import java.math.BigInteger;
+      
+      import static org.junit.Assert.*;
+      
+      public class BigIntegerConverterTest {
+      
+          @Test
+          public void testGetBigInteger() {
+              // Test edge cases
+              assertEquals(BigInteger.ZERO, BigIntegerConverter.getBigInteger("0"));
+              assertEquals(BigInteger.ONE, BigIntegerConverter.getBigInteger("1"));
+              assertEquals(BigInteger.TEN, BigIntegerConverter.getBigInteger("10"));
+              assertEquals(BigInteger.valueOf(Long.MAX_VALUE), BigIntegerConverter.getBigInteger(String.valueOf(Long.MAX_VALUE)));
+              assertEquals(BigInteger.valueOf(Long.MIN_VALUE), BigIntegerConverter.getBigInteger(String.valueOf(Long.MIN_VALUE)));
+              assertEquals(BigInteger.valueOf(Long.MAX_VALUE).add(BigInteger.ONE),
+                      BigIntegerConverter.getBigInteger(BigInteger.valueOf(Long.MAX_VALUE).add(BigInteger.ONE).toString()));
+              // Test positive numbers
+              assertEquals(new BigInteger("123456789"), BigIntegerConverter.getBigInteger("123456789"));
+              assertEquals(new BigInteger("987654321"), BigIntegerConverter.getBigInteger("987654321"));
+              assertEquals(new BigInteger("99999999999999999999999999999999999999999999999999"), BigIntegerConverter.getBigInteger("99999999999999999999999999999999999999999999999999"));
+      
+              // Test negative numbers
+              assertEquals(new BigInteger("-123456789"), BigIntegerConverter.getBigInteger("-123456789"));
+              assertEquals(new BigInteger("-987654321"), BigIntegerConverter.getBigInteger("-987654321"));
+              assertEquals(new BigInteger("-99999999999999999999999999999999999999999999999999"), BigIntegerConverter.getBigInteger("-99999999999999999999999999999999999999999999999999"));
+          }
+      }
+    learner_created: false
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 04 Apr 2024 08:04:08 UTC"
+record: -1
